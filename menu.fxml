@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.menu">
+   <children>
+      <AnchorPane layoutY="-2.0" prefHeight="400.0" prefWidth="246.0">
+         <children>
+            <Label fx:id="menu" layoutX="109.0" layoutY="47.0" text="Menu" />
+            <Label fx:id="pizza" layoutX="109.0" layoutY="122.0" text="Pizza = 700" />
+            <Label fx:id="burger" layoutX="109.0" layoutY="160.0" text="Burger = 350" />
+            <Label fx:id="pasta" layoutX="109.0" layoutY="200.0" text="Pasta = 400" />
+            <Label fx:id="chickenFry" layoutX="109.0" layoutY="243.0" text="Chicken fry = 200" />
+            <Label fx:id="frenchFry" layoutX="109.0" layoutY="290.0" text="French Fry = 80" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="item" layoutX="375.0" layoutY="261.0" />
+      <Button fx:id="add" layoutX="424.0" layoutY="307.0" mnemonicParsing="false" onAction="#addName" text="Add" />
+      <ListView fx:id="selectedItem" layoutX="350.0" layoutY="38.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="checkOut" layoutX="339.0" layoutY="350.0" mnemonicParsing="false" onAction="#switchToBIll" text="Check Out" />
+   </children>
+</AnchorPane>
